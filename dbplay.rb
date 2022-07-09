@@ -10,7 +10,7 @@ class Dbplay < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dung28-td/dbplay/releases/download/v1.0.0/dbplay_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "bfc739fddf5cb4fcc0a9bf7355ae5ba8d737af1402fc529434328ff1115f42d8"
+      sha256 "a5d765cb822f1bbe72cadcf3b90654fe44b6bcf834cc0408bf8b4f403ba37147"
 
       def install
         bin.install "dbplay"
@@ -18,7 +18,7 @@ class Dbplay < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dung28-td/dbplay/releases/download/v1.0.0/dbplay_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "4abe208fd0b1a6609f3f4afad0242892bcc78afe5e827faea8c31ff5cfdb0938"
+      sha256 "2fd7120be21f503108802f72d4833108ff60b53287469178179d11d880759b3d"
 
       def install
         bin.install "dbplay"
@@ -29,7 +29,7 @@ class Dbplay < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dung28-td/dbplay/releases/download/v1.0.0/dbplay_1.0.0_Linux_arm64.tar.gz"
-      sha256 "e21dc58f28ee012cfcb005640b1f58ba32e64722e85593e10f500d76f6ef52f7"
+      sha256 "50d13d2cb817878f4878860cc0fcb82f8b1d466539f6ef9341e6402470dd2ac0"
 
       def install
         bin.install "dbplay"
@@ -37,7 +37,7 @@ class Dbplay < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/dung28-td/dbplay/releases/download/v1.0.0/dbplay_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "9d0231a754f5608d7cb4bf92f5c6bb94729567e0e45b18f8ba7d46048ad45e72"
+      sha256 "ac33196bbb8ced86a45bfdb0d2a62cbcd33562a193690cda4bce07c7ee6cd362"
 
       def install
         bin.install "dbplay"
