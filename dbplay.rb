@@ -5,20 +5,20 @@
 class Dbplay < Formula
   desc ""
   homepage "https://github.com/dung28-td/dbplay"
-  version "1.0.2"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.0.2/dbplay_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "56a64b1f56c582c832a17547638a74f6218d94a33123a5ee44394cc567c4abac"
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "f02d5fee0321294dd84b2467b3cdd78b8903f0674c9a9d960d6aab433a4c18a6"
 
       def install
         bin.install "dbplay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.0.2/dbplay_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "2cb5155d0efd35af3d834787ca65e8d630e89e498ccf12bae8d45838ba06aa44"
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "7ee1ec43c8cf1f7f9d1468bb07997cd2591ac74ceefc520545690b1da93f5346"
 
       def install
         bin.install "dbplay"
@@ -27,17 +27,17 @@ class Dbplay < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.0.2/dbplay_1.0.2_Linux_arm64.tar.gz"
-      sha256 "365d2ffcb50bdd3e7616aa1a36fa6ba9f15e33d07ea7fa90c774d7a384d83432"
+    if Hardware::CPU.intel?
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "e39618bbb4d897fed5c3e248f0a1523bd1cc72f39848df98738d8756670c8f14"
 
       def install
         bin.install "dbplay"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.0.2/dbplay_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "ddf89dd35406c84319acaf9ad4357515f346c59b05217d78e592d9352107cb2c"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Linux_arm64.tar.gz"
+      sha256 "fe146ed2a4b7206b8b8439b6f66c35ff58cb7289adb3c8409a0558ec715f863a"
 
       def install
         bin.install "dbplay"
