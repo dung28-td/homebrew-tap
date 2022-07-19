@@ -5,20 +5,20 @@
 class Dbplay < Formula
   desc ""
   homepage "https://github.com/dung28-td/dbplay"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Darwin_x86_64.tar.gz"
-      sha256 "f02d5fee0321294dd84b2467b3cdd78b8903f0674c9a9d960d6aab433a4c18a6"
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.1/dbplay_1.1.1_Darwin_x86_64.tar.gz"
+      sha256 "3901bcf7e12acb59be991802f52438fe7e7c8c4601f96054750ac2af766b5e26"
 
       def install
         bin.install "dbplay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Darwin_arm64.tar.gz"
-      sha256 "7ee1ec43c8cf1f7f9d1468bb07997cd2591ac74ceefc520545690b1da93f5346"
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.1/dbplay_1.1.1_Darwin_arm64.tar.gz"
+      sha256 "9c87d14b1a5a857d6799a2519dd2836851fde5ce149103138cb62412f043484e"
 
       def install
         bin.install "dbplay"
@@ -28,16 +28,16 @@ class Dbplay < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Linux_x86_64.tar.gz"
-      sha256 "e39618bbb4d897fed5c3e248f0a1523bd1cc72f39848df98738d8756670c8f14"
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.1/dbplay_1.1.1_Linux_x86_64.tar.gz"
+      sha256 "49a063b20faebaecbd9e6c04ca15f8349519796ddfd359f75b055222c73bd883"
 
       def install
         bin.install "dbplay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.0/dbplay_1.1.0_Linux_arm64.tar.gz"
-      sha256 "fe146ed2a4b7206b8b8439b6f66c35ff58cb7289adb3c8409a0558ec715f863a"
+      url "https://github.com/dung28-td/dbplay/releases/download/v1.1.1/dbplay_1.1.1_Linux_arm64.tar.gz"
+      sha256 "c1893486f9bbc7831bffbc8deebc32e9e568e529468851d29c9faf46ba04511d"
 
       def install
         bin.install "dbplay"
